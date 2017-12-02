@@ -10,7 +10,7 @@
 
 // UMD (Universal Module Definition)
 // see https://github.com/umdjs/umd/blob/master/returnExports.js
-(function (root, factory) {
+(!window.fetchWithCORS && function (root, factory) {
   /*global define, module, exports */
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.

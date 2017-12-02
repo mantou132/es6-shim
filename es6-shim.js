@@ -10,7 +10,7 @@
 
 // UMD (Universal Module Definition)
 // see https://github.com/umdjs/umd/blob/master/returnExports.js
-(!window.fetchWithCORS && function (root, factory) {
+(!document.documentElement.getAttribute('data-impress-ext-install') && function (root, factory) {
   /*global define, module, exports */
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
